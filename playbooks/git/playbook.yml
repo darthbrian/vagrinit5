@@ -1,0 +1,36 @@
+---
+- name: Update repositories cache and install 'git' package
+  hosts: all
+  become: true
+#  become_user: true
+#  become_method: sudo
+#  sudo: yes
+#  sudo_user: root
+#  connection: local
+
+  tasks:
+#    - name: Get aptitude for upgrade
+#      apt: pkg=aptitude state=present
+
+#    - name: install python-apt 
+#      apt: pkg={{item}} state=present update_cache=yes cache_valid_time=604800
+#      with_items:
+#        - python-apt
+
+#    - name: install python3-apt
+#      apt: pkg={{item}} state=present update_cache=yes cache_valid_time=604800
+#      with_items:
+#        - python3-apt
+
+#    - name: Wait for system updates
+#      become: yes
+#      shell: while sudo fuser /var/lib/dpkg/lock >/dev/null 2>&1; do sleep 1; done;
+
+    - name: install git 
+      apt:
+           pkg={{item}}
+           state=absent
+           update_cache=yes
+           cache_valid_time=604800
+      with_items:
+        - git

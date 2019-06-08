@@ -1,0 +1,11 @@
+- name: test my new module
+  connection: local
+  hosts: all
+  become: true
+  tasks:
+    - name: Test that my module works
+      hello-world: 
+      register: result
+
+    - name: Display debug info
+      debug: var=result    

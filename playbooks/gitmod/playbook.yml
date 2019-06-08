@@ -1,0 +1,11 @@
+- name: test my new module
+#  connection: local
+  hosts: all
+  become: true
+  tasks:
+    - name: Install Git on targets
+      git-install: 
+      register: result
+
+    - name: Display debug info
+      debug: var=result    

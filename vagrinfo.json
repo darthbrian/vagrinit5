@@ -1,0 +1,83 @@
+{
+    "subnet": "10.0.0.",
+    "boxes" :
+        [
+            {
+                "name" : "fred",
+                "machtype": "xenpy64",
+                "ip": 11, 
+                "ram": 1024,
+                "disk": 20
+            },
+            {
+                "name" : "wilma",
+                "machtype": "xenpy64",
+                "ip": 12,
+                "ram": 512,
+                "disk": 20
+            },
+            {
+                "name" : "barney",
+                "machtype": "centpy64",
+                "ip": 13,
+                "ram": 512,
+                "disk": 20
+            },
+            {
+                "name" : "betty",
+                "machtype": "centpy64",
+                "ip": 14,
+                "ram": 512,
+                "disk": 20
+            },
+            {
+                "name" : "Admin",
+                "machtype": "xenpy64",
+                "ip": 10, 
+                "ram": 1024,
+                "disk": 20
+            },
+            {
+                "name" : "pebbles",
+                "machtype": "xenpy64",
+                "ip": 15,
+                "ram": 1024,
+                "disk": 20
+            },
+            {
+                "name" : "bammbamm",
+                "machtype": "xenpy64",
+                "ip": 16,
+                "ram": 512,
+                "disk": 20
+            },
+            {
+                "name" : "dino",
+                "machtype": "xenpy64",
+                "ip": 17,
+                "ram": 512,
+                "disk": 20
+            },
+            {
+                "name" : "hoppy",
+                "machtype": "xenpy64",
+                "ip": 18,
+                "ram": 512,
+                "disk": 20
+            },
+            {
+                "name" : "misterSlate",
+                "machtype": "xenpy64",
+                "ip": 19,
+                "ram": 1024,
+                "disk": 20
+            },
+            {
+                "name" : "gazoo",
+                "machtype": "xenpy64",
+                "ip": 20,
+                "ram": 512,
+                "disk": 20
+            }
+        ]
+}

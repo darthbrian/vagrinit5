@@ -1,0 +1,29 @@
+---
+- name: Test Playbook to list all .yml files in the playbooks/ directory structure 
+  hosts: all
+  connection: local
+
+  tasks:
+    - name: Find playbooks in the playbooks directory structure 
+      find:
+        paths: /vagrant/playbooks/
+        patterns: '*.yml'
+        recurse: yes
+#        register: result
+
+#    - debug:
+#      msg: "{{ matched }}"
+
+#    - name: install python-apt 
+#      apt: pkg={{item}} state=present update_cache=yes cache_valid_time=604800
+#      with_items:
+#        - python-apt
+
+#    - name: install python3-apt
+#      apt: pkg={{item}} state=present update_cache=yes cache_valid_time=604800
+#      with_items:
+#        - python3-apt
+
+#    - name: Wait for system updates
+#      become: yes
+#      shell: while sudo fuser /var/lib/dpkg/lock >/dev/null 2>&1; do sleep 1; done;
